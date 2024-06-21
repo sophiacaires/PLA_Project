@@ -68,9 +68,26 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  align-self: stretch;
   gap: 8px;
   overflow-x: hidden;
+}
+
+header {
+  background-color: var(--neutral-920);
+  color: var(--cyan-500);
+  width: -webkit-fill-available;
+  gap: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+header > p {
+  width: auto;
+  font-weight: 300;
 }
 
 p {
@@ -109,6 +126,14 @@ button {
 
 button:hover {
   background-color: var(--neutral-920);
+}
+
+.title{
+  color: var(--neutral-200);
+  width: -webkit-fill-available;
+  padding: 0 1rem;
+  font-weight: 700;
+  font-size: 1.25rem;
 }
 
 .openInfoBtn {
@@ -162,8 +187,8 @@ button:hover {
   flex-wrap: nowrap;
 }
 
-.infoRow{
-    flex-wrap: wrap;
+.infoRow {
+  flex-wrap: wrap;
 }
 
 .info {
