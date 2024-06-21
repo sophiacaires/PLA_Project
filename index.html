@@ -25,47 +25,6 @@
         </button>
         <div class="info">
           <div class="infoContent">
-            <p>
-              Siga estas diretrizes de formatação para garantir que sua matriz
-              seja interpretada corretamente pela aplicação:
-            </p>
-            <p style="font-weight: 500">Estrutura</p>
-            <p>
-              <li>Utilize colchetes para iniciar e fechar a matriz</li>
-              <li>Separe os elementos da matriz por vírgulas</li>
-              <li>Separe as linhas da matriz por ponto e vírgula</li>
-            </p>
-            <p style="font-weight: 500">Exemplo de Matriz Correta:</p>
-            <div
-              style="
-                padding: 0.75rem 1rem;
-                margin-top: 8px;
-                margin-bottom: 8px;
-                border-radius: 8px;
-                width: fit-content;
-                background-color: #171717;
-              "
-            >
-              <p>[1, 2, 3; 3, 2, 1; 2, 1, 3]</p>
-            </div>
-
-            <p style="font-weight: 500">Observações</p>
-            <p>
-              <li>
-                Os elementos da matriz podem ser números inteiros ou decimais.
-              </li>
-              <li>
-                Utilize o ponto "." para separar a parte decimal dos números.
-              </li>
-              <li>
-                Não utilize espaços em branco ou outros caracteres dentro da
-                matriz.
-              </li>
-              <li>A matriz deve conter pelo menos uma linha e uma coluna.</li>
-              <li>
-                As linhas da matriz devem ter o mesmo número de elementos.
-              </li>
-            </p>
           </div>
           <button class="closeInfoBtn">
             <svg
@@ -83,30 +42,25 @@
         </div>
       </div>
       <div class="column">
-        <textarea
-          id="messageInput"
-          cols="30"
-          rows="10"
-          placeholder="Mensagem"
-        ></textarea>
         <input
           type="text"
-          id="keyMatrixInput"
-          placeholder="Exemplo de matriz: [1, 2, 3; 4, 5, 6; 7, 8, 9]"
+          id="message"
+          placeholder="Mensagem"
+        />
+        <input
+          type="text"
+          id="primePairs"
+          placeholder="Chave"
         />
         <div class="row">
-          <button class="largeButton" onclick="encryptMessage()">
+          <button class="largeButton" onclick="encrypt()">
             Criptografar
           </button>
-          <button class="largeButton" onclick="decryptMessage()">
+          <button class="largeButton" onclick="decrypt()">
             Descriptografar
           </button>
         </div>
-        <div class="result">
-          <p id="result">
-            <span style="color: #525252">Resultado</span>
-          </p>
-        </div>
+        <textarea class="result" id="result" placeholder="Resultado"></textarea>
       </div>
     </main>
     <script src="script.js"></script>

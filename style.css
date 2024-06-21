@@ -143,6 +143,7 @@ button:hover {
 .column {
   max-width: 600px;
   height: -webkit-fill-available;
+  width: -webkit-fill-available;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -172,7 +173,7 @@ button:hover {
   justify-content: flex-start;
   align-items: start;
   gap: 8px;
-  display: inline-flex;
+  display: none;
   width: -webkit-fill-available;
   margin-bottom: 2rem;
 }
@@ -189,10 +190,12 @@ button:hover {
   border-radius: 8px;
   padding: 0.75rem 1rem;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   align-items: start;
   gap: 8px;
   display: inline-flex;
   width: -webkit-fill-available;
-  min-height: 48px;
+  min-height: 96px;
 }
