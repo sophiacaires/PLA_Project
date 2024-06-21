@@ -25,6 +25,39 @@
         </button>
         <div class="info">
           <div class="infoContent">
+            <p>
+              Siga estas diretrizes de formatação para garantir que sua chave
+              seja interpretada corretamente pela aplicação:
+            </p>
+            <br />
+            <p style="font-weight: 500">Estrutura</p>
+            <p>
+              - Utilize colchetes para iniciar e fechar a chave;
+              <br />- Cada linha deve estar entre seus próprios colchetes;
+              <br />- Elementos dentro de uma linha são separados por vírgulas;
+              <br />- Separe cada linha por vírgulas.
+            </p>
+            <br />
+            <p style="font-weight: 500">Exemplo de chave correta:</p>
+            <div
+              style="
+                padding: 0.75rem 1rem;
+                margin-top: 8px;
+                border-radius: 8px;
+                width: fit-content;
+                background-color: #171717;
+              "
+            >
+              <p>[[2, 17], [3, 11], [5, 13]]</p>
+            </div>
+            <br />
+            <p style="font-weight: 500">Observações adicionais</p>
+            <p>
+              - Os elementos da matriz podem ser números inteiros ou decimais.
+              <br />- Utilize o ponto "." para separar a parte decimal de um número.
+              <br />- Evite espaços ou outros caracteres dentro da matriz. 
+              <br />- As vírgulas servem apenas para separar elementos dentro de uma linha e as próprias linhas.
+            </p>
           </div>
           <button class="closeInfoBtn">
             <svg
@@ -42,20 +75,10 @@
         </div>
       </div>
       <div class="column">
-        <input
-          type="text"
-          id="message"
-          placeholder="Mensagem"
-        />
-        <input
-          type="text"
-          id="primePairs"
-          placeholder="Chave"
-        />
+        <input type="text" id="message" placeholder="Mensagem" />
+        <input type="text" id="primePairs" placeholder="Chave" />
         <div class="row">
-          <button class="largeButton" onclick="encrypt()">
-            Criptografar
-          </button>
+          <button class="largeButton" onclick="encrypt()">Criptografar</button>
           <button class="largeButton" onclick="decrypt()">
             Descriptografar
           </button>
