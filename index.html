@@ -15,7 +15,7 @@
     </header>
 
     <main>
-      <div class="row infoRow">
+      <div class="row infoRow" style="flex-wrap: nowrap;">
         <div
           style="
             display: flex;
@@ -95,7 +95,7 @@
       <div class="column">
         <input type="text" id="message" placeholder="Mensagem" />
         <input type="text" id="primePairs" placeholder="Chave" />
-        <div class="row">
+        <div class="row" style="flex-wrap: wrap;">
           <button class="largeButton" onclick="encrypt()">Criptografar</button>
           <button class="largeButton" onclick="decrypt()">
             Descriptografar
