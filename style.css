@@ -224,3 +224,9 @@ button:hover {
   width: -webkit-fill-available;
   min-height: 96px;
 }
+
+@media screen and (max-width: 564px) {
+  .row{
+    flex-wrap: wrap;
+  }
+}
