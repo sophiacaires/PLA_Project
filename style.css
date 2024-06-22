@@ -184,7 +184,7 @@ button:hover {
   align-items: start;
   gap: 8px;
   display: inline-flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 .infoRow {
@@ -225,8 +225,8 @@ button:hover {
   min-height: 96px;
 }
 
-@media screen and (max-width: 564px) {
+@media screen and (min-width: 600px) {
   .row{
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
 }
